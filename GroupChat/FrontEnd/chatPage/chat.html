@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+    <title>Chat page</title>
+</head>
+<body>
+   
+    <nav id="navBar" class="navbar navbar-light bg-info" style="
+    height: 100px;">
+        <span class="navbar-brand mb-0 h1 text-white" style="
+        font-size: 2rem;
+    ">Group Chating </span>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link text-white active" href="file:///D:/Code%20%20part/Shapner/AKash/NewProject/GroupChat/FrontEnd/GroupPage/groups.html">Home</a>
+      </li>
+      <div class="admin" style="margin-top: 8px;"> 
+              
+      </div>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="logout"  href="#">Logout</a>
+      </li>
+    </ul>
+      </nav>
+      <div class="container">
+        <div id="main" class="card card-body" >
+         <h2 class="title" style="text-align: center; color:black">Create Groups Msg</h2>
+     
+         
+          <h2 class="title">Messages</h2>
+         <ul id="items" class="list-group" style="
+         overflow: scroll;
+         height: 50vh;">
+           
+         </ul>
+        </div>
+        <form class="form-inline row">
+            
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputMsg" placeholder="Type message" style="width: 100%;">
+              </div>
+            <button type="submit" class="btn btn-primary mb-3" style="margin-top: 16px;">Send </button>
+          </form>
+       </div>
+      
+      <script src="chat.js"></script>
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
