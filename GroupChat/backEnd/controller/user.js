@@ -22,7 +22,7 @@ exports.postSign =async (req, res)=>{
  }
  exports.postlogin =async (req,res)=>{
     let email = req.body.email
-    let password = req.body.password// user  through password
+    let password = req.body.password// user k through password
     let userData =await user.findAll({where:{email:email}})
 
      
